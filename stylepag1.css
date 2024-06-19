@@ -1,0 +1,147 @@
+body{
+    font-family: 'Montserrat', sans-serif; 
+    background-color: rgb(231, 231, 231);
+}
+
+header{
+    
+    background-color: #BBBBBB;
+    padding: 0px 0xp;
+    width: 100%;
+    /*position: relative;*/
+}
+
+.caja{
+    width: 100%;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+nav{
+    position: absolute;
+    top: 40px;
+    right: 150px;
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+.titulo-principal{
+    padding-left: 40%;
+}
+
+.generos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.music-titulo{
+    padding: 10px,10px;
+    position: sticky;
+    top: 2px;
+}
+
+.music-titulos{
+    color:#ffffff;
+    background-color: #000000;
+    
+}
+
+.music-1{
+    padding: 0%;
+    background-color: #eeeeee;
+    height: 350px;
+    position: sticky;
+    top: 30px;
+    
+    
+}
+
+.music-2{
+    padding: 0%;
+    background-color: #b4aeae;
+    height: 350px;
+    position: sticky;
+    top: 30px;
+}
+
+.generos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.2%;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.generos li:hover{
+    border-color: #c78c19;
+}
+
+.anuncio{
+    font-size: 50px;
+}
+
+/*pagina de conctacto*/
+.Form_contacto {
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block; /* forma de desplegar los elementos dentro de la clase , justify-conten: center;*/
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 6px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2); /*rotate(45deg);*/
+}
+
+
+
