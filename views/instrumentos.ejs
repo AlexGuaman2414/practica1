@@ -1,0 +1,37 @@
+<%- include('partials/header'); -%>
+<div class="container"> 
+        <h1 class="anuncio">Proximamente</h1>
+        <h3>Listado de productos</h3>
+        <p>El valor del articulo en la posicion 2 es <%= instrumentos[2] %></p>
+        <p>Recorrer el arreglo</p>  
+        <ul>
+                <% for( let i = 0; i< instrumentos.length; i++){%>
+                        <li><%= instrumentos[i].Nombre %> - Precio es: <%= instrumentos[i].Precio %> - Descuento de: <%= instrumentos[i].Descuento %></li>
+                <% } %>
+
+        </ul>
+
+        <table class="table table-hover">
+                <thead>
+                        <tr>
+                                <th>Nombre Producto</th>
+                                <th>Precio</th>
+                                <th>Proveedor</th>
+                                <th>Descuento</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <% for( let i = 0; i< instrumentos.length; i++){%>
+                        <tr>
+                                <td><%= instrumentos[i].Nombre %></td>
+                                <td><%= instrumentos[i].Precio %></td>
+                                <td><%= instrumentos[i].powers[1] %></td>
+                                <td><%= instrumentos[i].Descuento %></td>
+
+                        </tr>
+                        <% } %>
+                </tbody>
+        </table>
+        
+</div>
+<%- include('partials/footer'); -%>

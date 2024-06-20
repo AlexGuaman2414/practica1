@@ -1,0 +1,42 @@
+
+  <%- include('partials/header'); -%>
+    <main class="main-contactos">
+        <form class="Form_contacto">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input class="input-padron" type="text" id="nombreapellido" required>
+
+            <label for="correoelectronico">Correo Electronico</label>
+            <input class="input-padron" type="email" id="correoelectronico" required placeholder="email@dominio.com">
+
+            <label for telefono>Telefono</label>
+            <input class="input-padron" type="tel" id="telefono"  required placeholder="(xxx) xxxx xxxx">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" required ></textarea>
+
+            <fieldset>
+                <legend>¿Como le gustadia que le contactemos?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                <label for="telefono"><input type="radio" name="contacto" value="telefono" id="telefono">Telefono</label>
+
+                <label for="watsapp"><input type="radio" name="contacto" value="watsapp" id="watsapp" checked>Watsapp</label>
+                    
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En que horario le gustaria ser atendido</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+                
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria que le enviemos anuncios de clases de musica?</label>
+
+            <input type="submit" value="Enviar Formulario" class="enviar">
+        </form>
+    </main>
+    <%- include('partials/footer'); -%>
